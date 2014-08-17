@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />       
+        <title>Anna Goltsberg</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">-->
+        <link type="text/css"  rel="stylesheet" href="css/font-awesome-4.1.0/css/font-awesome.min.css"/>
+        <script type="text/javascript" src='js/jquery.min.js'></script>
+        <script type="text/javascript" src='js/script.js'></script>
+        <script type="text/javascript" src='js/handlebars-v1.3.0.js'></script>
+        
+        <script id="addPhoto-template" type="text/x-handlebars-template">
+            <img class="photo_hide_{{_page}} img"{{#if flag}} onClick="showFullimg()" {{else}} class="photos" {{/if}} src="{{_link}}"/>
+        </script>
+        <script id="no_recent-template" type="text/x-handlebars-template">
+            <img class="photo_hide_{{page}} img photos" src="{{link}}"/>
+        </script>
+        <script id="createfullPhoto_template" type="text/x-handlebars-template">
+            <div id='wind_opacity'>
+                <span class='fa fa-times'></span>
+                <div id='viewport'>
+                    <div id='arrowLeft'>
+                        <span class='fa fa-chevron-left'></span>
+                    </div>
+                    <div id='arrowRight'>
+                        <span class='fa fa-chevron-right'></span>
+                    </div>
+                </div>
+                <img id='maxphoto' src='{{src}}' />
+            </div>
+        </script>
+
+
+
+    </head>
+    <body>
+
+        <header>
+            <img id='logo' src="img/logo.gif">
+            <ul id='menu'>
+                <li class="link" id="recent"><a href="">Recent</a></li>
+                <li class="link" id="ladies"><a href="#ladies">Ladies</a></li>
+                <li class="link" id="gents"><a href="#gents">Gents</a></li>
+                <li class="link" id="fashion"><a href="#fashion">Fashion</a></li>
+                <li class="link" id="studio"><a href="#studio">Studio</a></li>
+                <li class="link" id="kids"><a href="#kids">Kids</a></li>
+                <li class="link" id="about_me"><a href="#about_me">About me</a></li>
+            </ul>
+        </header>       
+        <div class="content" id="content_recent"></div>
+        <div class="content" id="content_ladies"></div>
+        <div class="content" id="content_gents"></div>
+        <div class="content" id="content_fashion"></div>
+        <div class="content" id="content_studio"></div>
+        <div class="content" id="content_kids"></div>
+        <div class="content" id="content_about_me">
+            <div id="contact">                
+                <p id='plogoag'>
+                    <img id='logoag' src="img/logo.gif">
+                    <img id='logoname' src="img/annagoltsberg.gif">
+                </p>
+                <ul id='contactdata'>
+                    <li>
+                        <p>Киев, Украина</p>
+                    </li>
+                    <li>
+                        <p>+38(093)452-81-09</p>
+                    </li>
+                    <li>
+                        <p>anngolt@gmail.com</p>
+                    </li>
+                </ul>
+                <img id='ag' src="img/ag.jpg">
+            </div>
+        </div>
+        <footer>
+            <div id='footerLeft'>
+                <ul>
+                    <li><a href="http://vk.com/goltsberg" target="_blank"><img class=iconSoc src="img/vk.png"></a></li>
+                    <li><a href="https://www.facebook.com/goltsberg" target="_blank"><img class=iconSoc src="img/fb.png"></a></li>
+                    <li><a href="http://instagram.com/goltsberg" target="_blank"><img class=iconSoc src="img/instagram.png"></a></li>
+                    <li><a href="http://500px.com/anngolt" target="_blank"><img class=iconSoc src="img/500px2.png"></a></li>
+                    <li><a href="http://goltsberg.tumblr.com/" target="_blank"><img class=iconSoc src="img/tumbler.png"></a></li>
+                </ul>
+            </div>
+            <div id='footerRight'>
+                <img src="img/annagoltsberg.gif">
+            </div>
+        </footer>
+    </body>
+</html>
