@@ -45,7 +45,6 @@ header {
     margin: 0 auto;
     position: relative;
     top: 0;
-    width: 600px;
 }
 
 a{
@@ -164,7 +163,7 @@ footer:hover {
 #footerLeft {
     float: left;
     height: 100%;
-    left: 15px;
+    left: 16px;
     position: relative;
     top: 0;
 }
@@ -179,7 +178,13 @@ footer:hover {
     display: table-cell;
     list-style-type: none;
     vertical-align: middle;
-    width: 30px;
+    padding: 0 1px;
+}
+
+#footerLeft a {
+  display: block;
+  height: 30px;
+  position: relative;
 }
 
 #footerRight {
@@ -188,12 +193,12 @@ footer:hover {
     height: 100%;
     margin: 0;
     position: relative;
-    right: 15px;
+    right: 21px;
     top: 0;
 }
 
 #footerRight img {
-    width: auto;
+    display: block;
     height: 30px;
 }
 
