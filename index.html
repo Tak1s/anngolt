@@ -5,17 +5,21 @@
 	<title>Anna Goltsberg</title>
 	<link type="text/css"  rel="stylesheet" href="css/font-awesome-4.1.0/css/font-awesome.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script type="text/javascript" src='js/dev.js'></script>
 	<script type="text/javascript" src='js/jquery.min.js'></script>
 	<script type="text/javascript" src='js/handlebars-v1.3.0.js'></script>
 	<script type="text/javascript" src='js/underscore.js'></script>
 	<script type="text/javascript" src='js/script.js'></script>
+	<script type="text/javascript" src='js/less-1.7.3.min.js'></script>
 
 	<script id="addPhoto-template" type="text/x-handlebars-template">
-            <img class="photo_hide_{{_page}} img"{{#if flag}} onClick="showFullimg()" {{else}} class="photos" {{/if}} src="{{_link}}"/>
-        </script>
-	<script id="no_recent-template" type="text/x-handlebars-template">
-            <img class="photo_hide_{{page}} img photos" src="{{link}}"/>
-        </script>
+		<div class='contentPhoto'>
+            <img class="photo_hide_{{page}} img" src="{{link}}"/>
+        </div>
+    </script>
+    <script id="addRecentPhoto-template" type="text/x-handlebars-template">
+            <img class="photo_hide_{{page}} img" src="{{link}}"/>
+    </script>
 	<script id="createfullPhoto_template" type="text/x-handlebars-template">
             <div id='wind_opacity'>
                 <span class='fa fa-times'></span>
@@ -62,12 +66,24 @@
 			</ul>
 		</div>
 	</header>
-	<div class="content" id="content_recent"></div>
-	<div class="content" id="content_ladies"></div>
-	<div class="content" id="content_gents"></div>
-	<div class="content" id="content_fashion"></div>
-	<div class="content" id="content_studio"></div>
-	<div class="content" id="content_kids"></div>
+	<div class="content" id="content_recent">
+		<div class='blockCenter'></div>		
+	</div>
+	<div class="content" id="content_ladies">
+		<div class='blockCenter'></div>
+	</div>
+	<div class="content" id="content_gents">
+		<div class='blockCenter'></div>
+	</div>
+	<div class="content" id="content_fashion">
+		<div class='blockCenter'></div>
+	</div>
+	<div class="content" id="content_studio">
+		<div class='blockCenter'></div>
+	</div>
+	<div class="content" id="content_kids">
+		<div class='blockCenter'></div>
+	</div>
 	<div class="content" id="content_about_me">
 		<div id="contact">
 			<p id='plogoag'>

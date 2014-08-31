@@ -59,30 +59,50 @@ a:hover {
 
 .content{
    display: none;
+   position: relative;
+   top: 100px;
+   bottom: 40px;
 }
 
 #content_recent{    
-    position: absolute;
-    width: 4000px;
-    top: 100px;
-    bottom: 40px;
+    position: relative;
+    width: auto;
     max-height: 100%; 
+}
+
+#content_recent.content .blockCenter .contentPhoto{
+display: table-cell;
+float: none;
+margin: 0;
+height: auto;
+overflow: visible;
+position: relative;
+width: auto;
+}
+
+#content_recent.content .blockCenter{
+   display: table;
+height: 100%;
+margin: 0;
+max-height: 100%;
+max-width: none;
+position: relative;
+width: auto;
 }
 
 .photos{
     position: absolute;
-    //max-height: 100%;
-    //margin: 0 10px;
+    /*//max-height: 100%;*/
+    /*//margin: 0 10px;*/
     float: left;
 }
 
 .photo_hide_recent{
     max-height: 100%;
     margin: 0 10px;
-    float: left;
 }
 
-.miniPhoto{
+.content .contentPhoto{
     position: relative;
     margin: 13px;
     width: 200px;
@@ -91,11 +111,12 @@ a:hover {
     overflow: hidden;
 }
 
-.blockCenter{
+.content .blockCenter{
     max-width: 910px;
     width: 100%;
-    margin: 100px auto 0;
+    margin: 0 auto;
 }
+
 
 #contact{
     max-width: 300px;
@@ -305,13 +326,16 @@ footer:hover {
 }*/
 
 .link {
-    cursor: pointer;
     display: table-cell;
     font-family: COPRGTB;
     list-style-type: none;
     padding: 0 10px;
     position: relative;
     vertical-align: middle;
+}
+
+.link a{
+    cursor: pointer;
 }
 
 .photo_hide{
