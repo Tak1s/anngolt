@@ -351,3 +351,17 @@ footer:hover {
     color: #fff;
     z-index: 1010;
 }
+
+.horizontalPozitionImg {
+  height: 100%;
+  left: 50%;
+  margin-left: -150px;
+  position: relative;
+}
+
+.verticalPozitionImg {
+  width: 100%;
+  top: 50%;
+  margin-top: -150px;
+  position: relative;
+}

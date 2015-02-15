@@ -26,8 +26,18 @@ DisplayPhoto = (album_name)->
 		resizeRecent();
 		# , 1500);
 
-request =
 
+#Центрирование фото в миниатюре    
+positionPhotos = (link)->  
+	console.log link           
+	$(".photo_hide_"+link).each ->
+		if($(this).width() > $(this).height())
+			$(this).addClass("horizontalPozitionImg");
+		else
+			$(this).addClass("verticalPozitionImg");
+	bindEvent(link);
+
+request =
 	#Запрос Json документов
 	getJson: (setUrl, callback) ->
 		$.ajax({
