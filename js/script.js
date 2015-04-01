@@ -20,8 +20,7 @@ positionViewport = function() {
 };
 
 resizeRecent = function() {
-  $("#content_recent.content .blockCenter .contentPhoto").height($(window).height() - 140);
-  return DeveloperTool.Init().ReloadAllCSSThisPage();
+  return $("#content_recent.content .blockCenter .contentPhoto .img").height($(window).height() - 140);
 };
 
 DisplayPhoto = function(album_name) {

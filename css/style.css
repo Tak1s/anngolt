@@ -81,7 +81,7 @@ width: auto;
 }
 
 #content_recent.content .blockCenter{
-   display: table;
+   display: table-row;
 height: 100%;
 margin: 0;
 max-height: 100%;

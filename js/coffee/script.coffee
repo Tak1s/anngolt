@@ -15,8 +15,9 @@ positionViewport = ->
 
 #Изменение размера фотографий рецент
 resizeRecent = ->
-	$("#content_recent.content .blockCenter .contentPhoto").height($(window).height()-140);
-	DeveloperTool.Init().ReloadAllCSSThisPage();
+	$("#content_recent.content .blockCenter .contentPhoto .img").height($(window).height()-140);
+	# $("#content_recent.content .blockCenter .contentPhoto").width("auto");
+	# DeveloperTool.Init().ReloadAllCSSThisPage();
 
 #Вывод фото на екран
 DisplayPhoto = (album_name)->
