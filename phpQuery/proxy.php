@@ -2,8 +2,7 @@
     //   if (isDomainAvailible('http://api-fotki.yandex.ru/api/users/annagoltsberg/?format=json'))
     require ('phpQuery.php');
     $url = $_GET['url'];
-    echo "gggg"
-    if ($url === "firstQuery"){
+    if($url === "firstQuery"){
     	$url = "http://api-fotki.yandex.ru/api/users/annagoltsberg/?format=json";
     };
     
